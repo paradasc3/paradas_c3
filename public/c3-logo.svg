@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 175" role="img" aria-label="C3 Engenharia e Soluções">
+  <rect width="430" height="175" fill="#ffffff"/>
+  <g fill="#20285f">
+    <path d="M20 37 70 23 120 37 120 71 83 71 83 64 70 60 41 68 41 102 70 111 83 106 83 96 120 96 120 128 70 142 20 128z"/>
+    <path d="M130 37 181 23 230 37 230 128 181 142 130 128 130 96 167 96 167 106 181 111 207 103 207 93 177 93 177 75 207 75 207 67 181 59 167 64 167 71 130 71z"/>
+  </g>
+  <g fill="#ffffff">
+    <path d="M41 68 70 60 94 67 94 97 70 111 41 102z"/>
+    <rect x="82" y="71" width="86" height="25"/>
+    <path d="M167 64 181 59 207 67 207 78 181 78 167 72z"/>
+    <path d="M167 96 181 93 207 93 207 103 181 111 167 106z"/>
+  </g>
+  <g fill="#20285f" font-family="Montserrat, Segoe UI, Arial, sans-serif" font-weight="900">
+    <text x="248" y="78" font-size="17" letter-spacing="5">ENGENHARIA</text>
+    <text x="248" y="102" font-size="17" letter-spacing="4.4">&amp; SOLU&#199;&#213;ES</text>
+  </g>
+</svg>
