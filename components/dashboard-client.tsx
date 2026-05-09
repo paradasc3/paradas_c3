@@ -343,7 +343,10 @@ export function DashboardClient({ initialSnapshot }: DashboardClientProps) {
     );
     const currentDoneAndInProgressPercent = percentFromWork(
       operations
-        .filter((operation) => [APP_STATUS.done, APP_STATUS.inProgress].includes(normalizeStatus(operation.statusApp)))
+        .filter((operation) => {
+          const status = normalizeStatus(operation.statusApp);
+          return status === APP_STATUS.done || status === APP_STATUS.inProgress;
+        })
         .reduce((sum, operation) => sum + operationWeight(operation), 0),
       totalWeight,
     );
@@ -369,7 +372,10 @@ export function DashboardClient({ initialSnapshot }: DashboardClientProps) {
         .filter((item) => normalizeStatus(item.operation.statusApp) === APP_STATUS.done)
         .reduce((sum, item) => sum + operationWeight(item.operation), 0);
       doneAndInProgress += items
-        .filter((item) => [APP_STATUS.done, APP_STATUS.inProgress].includes(normalizeStatus(item.operation.statusApp)))
+        .filter((item) => {
+          const status = normalizeStatus(item.operation.statusApp);
+          return status === APP_STATUS.done || status === APP_STATUS.inProgress;
+        })
         .reduce((sum, item) => sum + operationWeight(item.operation), 0);
       points.push({
         date: new Date(`${dayKey}T00:00:00`),
